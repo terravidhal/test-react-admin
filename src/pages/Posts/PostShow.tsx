@@ -9,10 +9,6 @@ import StatusField from "./StatusField";
 
 
 
-
-
-
-
 export const PostShow = () => (
   <Show>
     <SimpleShowLayout>

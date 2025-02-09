@@ -9,8 +9,6 @@ import {
 
 
 
-
-
 const PostEdit = () => (
   <Edit>
     <SimpleForm>

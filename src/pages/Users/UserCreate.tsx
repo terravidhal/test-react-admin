@@ -9,7 +9,6 @@ import {
 
 
 
-
 const UserCreate = () => (
   <Create
     transform={(data) => ({

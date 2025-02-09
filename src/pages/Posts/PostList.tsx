@@ -18,7 +18,6 @@ import StatusField from "./StatusField";
 
 
 
-
 const postFilters = [
   <TextInput source="q" label="Search by title" alwaysOn />,
   <ReferenceInput source="userId" reference="users" label="Author">
@@ -41,16 +40,15 @@ const ListActions = () => (
   </TopToolbar>
 );
 
-
-
 const PostList = () => (
   <List
     filters={postFilters}
     actions={<ListActions />}
     sort={{ field: "created_at", order: "DESC" }}
   >
-    <Datagrid rowClick="show" 
-   // bulkActionButtons={false}
+    <Datagrid
+      rowClick="show"
+      // bulkActionButtons={false}
     >
       <TextField
         source="title"

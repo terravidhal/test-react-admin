@@ -12,8 +12,6 @@ import { EyeOffIcon } from "lucide-react";
 
 
 
-
-
 const BulkDeactivateButton = () => {
   const [open, setOpen] = useState(false);
   const { selectedIds, data: users = [] } = useListContext();

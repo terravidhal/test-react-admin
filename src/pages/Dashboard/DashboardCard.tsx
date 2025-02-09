@@ -1,18 +1,19 @@
-import { Card, CardContent, Box, Typography } from '@mui/material';
+import { Card, CardContent, Box, Typography } from "@mui/material";
 
 
-
-const DashboardCard = ({ icon: Icon, title, value, color }:any) => (
+const DashboardCard = ({ icon: Icon, title, value, color }: any) => (
   <Card>
-    <CardContent sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-      <Box sx={{ 
-        p: 1.5, 
-        borderRadius: 2, 
-        bgcolor: `${color}15`,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
+    <CardContent sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+      <Box
+        sx={{
+          p: 1.5,
+          borderRadius: 2,
+          bgcolor: `${color}15`,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Icon size={24} color={color} />
       </Box>
       <Box>

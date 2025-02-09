@@ -51,15 +51,13 @@ const PostBulkActionButtons = () => (
   </>
 );
 
- const UserList = () => (
+const UserList = () => (
   <List
     filters={userFilters}
     actions={<ListActions />}
     sort={{ field: "created_at", order: "DESC" }}
   >
-    <Datagrid
-      bulkActionButtons={<PostBulkActionButtons />}
-    >
+    <Datagrid bulkActionButtons={<PostBulkActionButtons />}>
       <TextField source="id" />
       <TextField
         source="name"
